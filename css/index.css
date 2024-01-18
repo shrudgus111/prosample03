@@ -18,6 +18,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.blind {
+  position: absolute;
+  left: -9999px;
+  overflow: hidden;
+}
 
 .cf::after {
   content: "";
@@ -44,6 +49,9 @@ img {
 #header .row h1 {
   float: left;
   padding: 10px 0;
+}
+#header .menuopen {
+  display: none;
 }
 
 #header .row #nav {
@@ -465,6 +473,7 @@ img {
 }
 #footer .btmmenu .companyinfo .ca a {
   margin: 0 40px 0 0;
+  word-break: keep-all;
 }
 
 #footer .btmmenu .sns {

@@ -1,0 +1,241 @@
+@media screen and (max-width: 1220px) {
+  .row {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #header {
+    background-color: #fff;
+  }
+  #header .row {
+    padding: 0;
+  }
+  #header .row h1 {
+    float: left;
+    padding: 10px 0 10px 50px;
+  }
+  #header .menuopen {
+    display: block;
+    float: right;
+    font-size: 25px;
+    height: 85px;
+    line-height: 85px;
+    margin-right: 50px;
+  }
+
+  #header .row #nav {
+    float: right;
+    width: 100%;
+    display: block;
+  }
+
+  #header .row #nav > ul.depth1 > li {
+    float: none;
+    position: relative;
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  #header .row #nav ul.depth1 > li > a {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 50px;
+    display: block;
+    color: #333;
+    height: auto;
+    line-height: 50px;
+    border-top: 1px solid rgba(132, 132, 132, 0.15);
+  }
+  #header .row #nav ul.depth1 > li:hover > a {
+    background: #000;
+    color: #fff;
+  }
+  #header .row #nav ul.depth1 > li > a::after {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 50px;
+    font-family: "FontAwesome";
+    font-size: 10px;
+    content: "\f107";
+    opacity: 0.3;
+  }
+
+  #header .row #nav ul.depth1 > li:hover > ul.depth2 {
+    display: block;
+  }
+
+  #header .row #nav ul.depth2 {
+    display: none;
+    position: static;
+    top: 100%;
+    width: 100%;
+    text-align: left;
+    z-index: 999;
+  }
+
+  #header .row #nav ul.depth1 > li > ul.depth2 > li > a {
+    display: block;
+    padding: 12px 0 12px 50px;
+
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 0px solid rgba(132, 132, 132, 0.15);
+    border-top: 1px solid rgba(132, 132, 132, 0.15);
+
+    background-color: #fff;
+    color: #333;
+
+    transition: all 0.3s;
+  }
+
+  #header .row #nav ul.depth1 > li > ul.depth2 > li > a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  /* 홈메인 */
+
+  #section .homemain .textbox {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  #section .homemain .textbox h2 {
+    display: inline;
+    font-size: 19px;
+    padding: 20px 0;
+  }
+  #section .slick-current.slick-active.slide .textbox h2 {
+    animation: fadeInLeft 1s 1 both 0.3s;
+  }
+  #section .homemain .textbox p {
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  #section .homemain .slide {
+    position: relative;
+    height: 70vw;
+  }
+
+  /* about */
+  #section .about .imagebox > li {
+    float: left;
+    width: 100%;
+    padding: 0 16px;
+    margin-bottom: 30px;
+  }
+  /* creative */
+
+  #section .creative .videoBox {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  #section .creative .text {
+    float: left;
+    width: 100%;
+    padding: 20px 30px;
+    text-align: left;
+  }
+
+  /* business*/
+  #section .business {
+    padding: 120px 0 0 0;
+    text-align: center;
+  }
+
+  #section .business ul li {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  /* best*/
+
+  #section .best {
+    background: url(../image/banner04.jpg) center / cover;
+    height: 550px;
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  #section .best h2 {
+    font-size: 40px;
+  }
+
+  #section .best p {
+    font-size: 15px;
+    padding: 20px 0 20px;
+    line-height: 1.8em;
+  }
+
+  #section .contact .row .map {
+    float: left;
+    width: 100%;
+  }
+
+  #section .contact .row .query {
+    float: left;
+    width: 100%;
+    background: #fff;
+    height: 450px;
+    padding: 110px 0 0 20px;
+  }
+
+  /* footer */
+
+  #footer .btmlogo {
+    float: left;
+    margin-left: 20px;
+  }
+
+  #footer .btmmenu {
+    width: 100%;
+    float: right;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  #footer .btmmenu .companyinfo {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  #footer .btmmenu .companyinfo .addr {
+    padding-top: 30px;
+    line-height: 1.7em;
+    padding-bottom: 30px;
+  }
+  #footer .btmmenu .companyinfo .addr p {
+    font-size: 14px;
+  }
+  #footer .btmmenu .companyinfo .ca {
+    width: 100%;
+  }
+  #footer .btmmenu .companyinfo .ca a {
+    margin: 0 10px 0 0;
+    font-size: 13px;
+  }
+
+  #footer .btmmenu .sns {
+    float: none;
+    text-align: center;
+    margin-left: 0;
+  }
+  #footer .btmmenu .sns a {
+    margin: 0 20px 0 0;
+    color: gray;
+  }
+}
