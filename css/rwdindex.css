@@ -134,9 +134,14 @@
     float: left;
     width: 100%;
     padding: 0 16px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   /* creative */
+  #section .creative {
+    overflow: hidden;
+    padding: 0px 0;
+    background: #fafafa;
+  }
 
   #section .creative .videoBox {
     float: left;
@@ -147,14 +152,19 @@
   #section .creative .text {
     float: left;
     width: 100%;
-    padding: 20px 30px;
-    text-align: left;
+    padding: 20px 20px;
   }
 
   /* business*/
   #section .business {
-    padding: 120px 0 0 0;
+    padding: 60px 0 0 0;
     text-align: center;
+  }
+
+  #section .business p.text {
+    font-size: 15px;
+    line-height: 2em;
+    margin: 20px 0 20px;
   }
 
   #section .business ul li {
@@ -162,13 +172,19 @@
     width: 50%;
     padding: 10px;
   }
+
+  #section .business ul li img {
+    transition: all 0.5s;
+    transform-origin: center top;
+    width: 100%;
+  }
   /* best*/
 
   #section .best {
-    background: url(../image/banner04.jpg) center / cover;
-    height: 550px;
+    background: url(../image/banner04.jpg) right center / cover;
+    height: 580px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 100px;
   }
 
   #section .best h2 {
@@ -181,6 +197,8 @@
     line-height: 1.8em;
   }
 
+  /* contact*/
+
   #section .contact .row .map {
     float: left;
     width: 100%;
@@ -190,52 +208,40 @@
     float: left;
     width: 100%;
     background: #fff;
-    height: 450px;
-    padding: 110px 0 0 20px;
+    height: auto;
+    padding: 60px 0;
   }
 
   /* footer */
 
   #footer .btmlogo {
     float: left;
-    margin-left: 20px;
+    width: 100%;
   }
 
   #footer .btmmenu {
     width: 100%;
     float: right;
-    text-align: center;
-    overflow: hidden;
   }
 
   #footer .btmmenu .companyinfo {
-    text-align: center;
-    margin-right: 0;
-  }
-
-  #footer .btmmenu .companyinfo .addr {
-    padding-top: 30px;
-    line-height: 1.7em;
-    padding-bottom: 30px;
-  }
-  #footer .btmmenu .companyinfo .addr p {
-    font-size: 14px;
-  }
-  #footer .btmmenu .companyinfo .ca {
+    float: left;
     width: 100%;
-  }
-  #footer .btmmenu .companyinfo .ca a {
-    margin: 0 10px 0 0;
-    font-size: 13px;
+    margin: 20px 0;
   }
 
   #footer .btmmenu .sns {
-    float: none;
-    text-align: center;
-    margin-left: 0;
+    float: right;
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 40px;
   }
-  #footer .btmmenu .sns a {
-    margin: 0 20px 0 0;
-    color: gray;
+
+  #footer span {
+    display: block;
+  }
+
+  #footer span.slash {
+    display: none;
   }
 }
