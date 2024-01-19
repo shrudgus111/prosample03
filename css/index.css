@@ -45,9 +45,12 @@ img {
 #header {
   background-color: #fff;
 }
-
+#header .row {
+  display: flex;
+  justify-content: space-between;
+}
 #header .row h1 {
-  float: left;
+  /* float: left; */
   padding: 10px 0;
 }
 #header .menuopen {
@@ -55,11 +58,15 @@ img {
 }
 
 #header .row #nav {
-  float: right;
+  /* float: right; */
+  display: flex;
+}
+#header .row #nav > ul.depth1 {
+  display: flex;
 }
 
 #header .row #nav > ul.depth1 > li {
-  float: left;
+  /* float: left; */
   position: relative;
   text-align: center;
   margin-left: 12px;
@@ -243,11 +250,12 @@ img {
 #section .about .imagebox {
   display: block;
   width: 100%;
+  display: flex;
 }
 
 #section .about .imagebox > li {
-  float: left;
-  width: 33.33%;
+  /* float: left;
+  width: 33.33%; */
   padding: 0 16px;
 }
 
@@ -281,20 +289,23 @@ img {
 /* ============================================================ */
 #section .creative {
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
   padding: 100px 0;
   background: #fafafa;
 }
 #section .creative .videoBox {
-  float: left;
   width: 50%;
+  /* float: left; */
+  /* width: 50%; */
 }
 #section .creative .videoBox video {
   width: 100%;
 }
 #section .creative .text {
-  float: left;
-  width: 50%;
-  padding: 20px 100px;
+  /* float: left;
+  width: 50%; */
+  padding: 20px 70px;
 }
 #section .creative .text .bod {
   border: 0.1px solid #7c7c7c;
@@ -313,7 +324,7 @@ img {
   /* 단어잘림 허용안함 */
   word-break: keep-all;
   line-height: 1.5em;
-  padding-right: 100px;
+  /* padding-right: 100px; */
 }
 #section .creative .text p strong {
   display: block;
@@ -342,10 +353,13 @@ img {
 }
 #section .business ul {
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 #section .business ul li {
-  float: left;
-  width: 20%;
+  /* float: left;
+  width: 20%; */
+  flex: 0 1 20%;
   padding: 10px;
 }
 #section .business ul li > a {
@@ -404,14 +418,18 @@ img {
   margin-top: -200px;
 }
 #section .contact .row {
-  overflow: hidden;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: space-between;
 }
 #section .contact .row .map {
-  float: left;
   width: 50%;
+  /* float: left;
+  width: 50%; */
 }
 #section .contact .row .query {
-  float: left;
+  /* float: left;
+  width: 50%; */
   width: 50%;
   background: #fff;
   height: 450px;
@@ -450,21 +468,24 @@ img {
 }
 
 #footer .row {
-  overflow: hidden;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: space-between;
 }
 
 #footer .btmlogo {
-  float: left;
+  /* float: left; */
 }
 #footer .btmmenu {
-  float: right;
+  /* float: right; */
 }
 #footer .btmmenu {
   overflow: hidden;
+  position: relative;
 }
 #footer .btmmenu .companyinfo {
-  float: left;
-  margin-right: 80px;
+  /* float: left; */
+  margin-right: 270px;
 }
 
 #footer .btmmenu .companyinfo .addr {
@@ -477,9 +498,11 @@ img {
 }
 
 #footer .btmmenu .sns {
-  float: right;
-  margin-left: 50px;
-  margin-top: 40px;
+  display: flex;
+  /* float: right; */
+  margin-left: 710px;
+  position: absolute;
+  bottom: 60px;
 }
 #footer .btmmenu .sns a {
   margin: 0 20px 0 0;
